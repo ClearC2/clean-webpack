@@ -1,0 +1,28 @@
+{
+  "name": "clean-webpack",
+  "version": "1.0.0",
+  "description": "plugins for cleaning up old webpack builds",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClearC2/clean-webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "clean-webpack-plugin",
+    "webpack-clean-obsolete-chunks"
+  ],
+  "author": "Nick Swope",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClearC2/clean-webpack/issues"
+  },
+  "homepage": "https://github.com/ClearC2/clean-webpack#readme",
+  "dependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "webpack-clean-obsolete-chunks": "^0.3.0"
+  }
+}
