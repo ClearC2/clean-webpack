@@ -23,11 +23,8 @@ module.exports = function (plugins, pathsToClean = [], cleanOptions = {}) {
   console.log('=========================================================')
   console.log('=========================================================')
 
-  console.log('combinedPathsToClean:', JSON.stringify(combinedPathsToClean))
-
-  console.log('==========================')
-
-  console.log('combinedCleanOptions:', JSON.stringify(combinedCleanOptions))
+  console.log('__dirname:', __dirname)
+  console.log('process.cwd:', process.cwd())
 
   console.log('=========================================================')
   console.log('=========================================================')
