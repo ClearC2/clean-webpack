@@ -6,9 +6,11 @@ Plugins for cleaning up old webpack builds
 This package provides an easy plug-and-play alternative to the steps listed in the original how-to below.
 
 ## Install
-1. Add the following line to the devDependencies section in your package.json:
+1. Add the following line to the devDependencies section in your package.json: 
 
-  `"clean-webpack": "git+ssh://git@github.com:ClearC2/clean-webpack.git"`
+````
+"clean-webpack": "git+ssh://git@github.com:ClearC2/clean-webpack.git"
+````
 
 2. Run `yarn` in your project root
 
