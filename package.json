@@ -24,5 +24,8 @@
   "dependencies": {
     "clean-webpack-plugin": "^0.1.17",
     "webpack-clean-obsolete-chunks": "^0.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.16.0"
   }
 }

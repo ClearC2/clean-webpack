@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = function (plugins, pathsToClean = [], cleanOptions = {}) {
   const defaultPathsToClean = ['dist/*.*']
   const defaultCleanOptions = {
-    root: process.cwd()
+    root: process.cwd(),
     exclude: '.gitignore'
   }
 
