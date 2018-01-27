@@ -3,7 +3,7 @@ Plugins for cleaning up old webpack builds
 
 
 ## What Does This Package Do?
-This package provides an easy plug-and-play alternative to the steps listed in the origin how-to below.
+This package provides an easy plug-and-play alternative to the steps listed in the original how-to below.
 
 ## Install
 1. Add the following line to the devDependencies section in your package.json:
@@ -13,7 +13,7 @@ This package provides an easy plug-and-play alternative to the steps listed in t
 2. Run `yarn` in your project root
 
 
-## How to Implement
+## Implement
 
 Add the following to your webpack config:
 
