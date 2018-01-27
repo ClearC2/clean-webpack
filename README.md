@@ -3,7 +3,7 @@ Plugins for cleaning up old webpack builds
 
 
 ## What Does This Package Do
-This package provides an easy plug-and-play alternative to the steps listed in the how-to below.
+This package provides an easy plug-and-play alternative to the steps listed in the origin how-to below.
 
 ## How to Implement
 
@@ -17,7 +17,7 @@ CleanWebpack(plugins, pathsToClean, cleanOptions)
 
 where `plugins` is your array of plugins, `pathsToClean` is an [array of paths](https://github.com/johnagan/clean-webpack-plugin#options-and-defaults-optional) you want to clean, and `cleanOptions` is an [option config object](https://github.com/johnagan/clean-webpack-plugin#options-and-defaults-optional).
 
-Only the first parameter (`plugins`) is required. If left blank, the other two will use the defaults below. Any arrays/objects passed in here will use the spread operator to combine/overwrite the values below.
+Only the first parameter (`plugins`) is required. If left blank, the other two will use the defaults below. If not, arrays/objects passed in here will be concatenated/shallowly merged onto the defaults below.
 
 ### Defaults
 
@@ -27,7 +27,19 @@ pathsToClean = ['dist/*.*']
 cleanOptions = {exclude: '.gitignore'}
 ````
 
-### Example
+### Example 1 (Most Cases)
+
+````js
+import CleanWebpack from 'clean-webpack'
+
+let plugins = []
+
+CleanWebpack(plugins)
+````
+
+This will use the defaults above.
+
+### Example 2 (Special Configs)
 
 ````js
 import CleanWebpack from 'clean-webpack'
