@@ -2,7 +2,7 @@
 Plugins for cleaning up old webpack builds
 
 
-## What Does This Package Do
+## What Does This Package Do?
 This package provides an easy plug-and-play alternative to the steps listed in the origin how-to below.
 
 ## Install
