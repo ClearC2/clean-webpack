@@ -32,7 +32,7 @@ Only the first parameter (`plugins`) is required. If left blank, the other two w
 ````js
 pathsToClean = ['dist/*.*']
 
-cleanOptions = {exclude: '.gitignore'}
+cleanOptions = {root: process.cwd(), exclude: '.gitignore'}
 ````
 
 ### Example 1 (Most Cases)
@@ -54,7 +54,7 @@ import CleanWebpack from 'clean-webpack'
 
 let plugins = []
 const pathsToClean = ['brand-new-path']
-const cleanOptions = {verbose: false, exclude: 'something else'}
+const cleanOptions = {root: process.cwd(), verbose: false, exclude: 'something else'}
 
 CleanWebpack(plugins, pathsToClean, cleanOptions)
 ````
@@ -63,7 +63,7 @@ The combined paths array and config object would then be:
 
 ````js
 pathsToClean = ['dist/*.*', 'brand-new-path']
-cleanOptions = {exclude: 'something else', verbose: false}
+cleanOptions = {root: process.cwd(), exclude: 'something else', verbose: false}
 ````
 
 ## Original How-To
